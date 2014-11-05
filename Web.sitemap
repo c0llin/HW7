@@ -4,7 +4,7 @@
     <siteMapNode url="~/default.aspx" title="Home"  description="" ></siteMapNode>
         <siteMapNode url="~/admin/default.aspx" title="Admin"  description="" >
         </siteMapNode>
-       <siteMapNode url="~/auth" title="Auth User"  description="" >
+       <siteMapNode url="~/Search.aspx" title="Search"  description="" >
        </siteMapNode>
     </siteMapNode>
 </siteMap>
