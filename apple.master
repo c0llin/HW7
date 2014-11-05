@@ -1,0 +1,28 @@
+﻿<%@ Master Language="VB" CodeFile="apple.master.vb" Inherits="apple" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type ="text/css" href="~/css/main.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <nav id="nav">
+        <asp:Menu ID="navMenu" runat="server" DataSourceID="SiteMap" Orientation="Horizontal" RenderingMode="Table">
+
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMap" runat="server" ShowStartingNode="false" />
+    </nav>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
