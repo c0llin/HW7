@@ -1,17 +1,9 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Search.aspx.vb" Inherits="Search" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/apple.master" AutoEventWireup="false" CodeFile="Search.aspx.vb" Inherits="Search" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-        <asp:SqlDataSource ID="Sqlhw7" runat="server" ConnectionString="<%$ ConnectionStrings:db_hw7 %>" SelectCommand="SELECT * FROM [cpetit_hw7]"></asp:SqlDataSource>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <asp:SqlDataSource ID="Sqlhw7" runat="server" ConnectionString="<%$ ConnectionStrings:db_hw7 %>" SelectCommand="SELECT * FROM [cpetit_hw7]"></asp:SqlDataSource>
         Search:
         <asp:TextBox ID="tbSearch" runat="server"></asp:TextBox>
         <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="Sqlhw7">
@@ -24,6 +16,5 @@
                 <asp:BoundField DataField="Color" HeaderText="Color" SortExpression="Color" />
             </Columns>
         </asp:GridView>
-    </form>
-</body>
-</html>
+</asp:Content>
+

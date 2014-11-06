@@ -1,9 +1,17 @@
 ﻿body {
     color:red;
+    background-color:lavender;
 }
 nav{
     background-color:orange;
 }
 #footer{
     background-color:orange;
+}
+
+#AppLogo2{
+    float:right;
+}
+#AppLogo1{
+    float:left;
 }

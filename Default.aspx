@@ -15,7 +15,7 @@
             <asp:BoundField DataField="Model" HeaderText="Model" SortExpression="Model" />
             <asp:BoundField DataField="Color" HeaderText="Color" SortExpression="Color" />
         </Columns>
-    </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_hw7 %>" SelectCommand="SELECT [Name], [Year], [Cost], [Model], [Color] FROM [cpetit_hw7]"></asp:SqlDataSource>
+</asp:GridView>
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_hw7 %>" SelectCommand="SELECT [Name], [Year], [Cost], [Model], [Color] FROM [cpetit_hw7]"></asp:SqlDataSource>
 </asp:Content>
 

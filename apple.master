@@ -13,9 +13,9 @@
     <form id="form1" runat="server">
     <div id="wrap">
         <div id="header">
-            <div id="logo"></div>
+            <asp:Image ID="AppLogo1" runat="server" Height="80px" ImageUrl="~/img/apple_logo_rainbow.gif" />
             <div id="title"></div>
-            <div id="logo1"></div>
+            <asp:Image ID="AppLogo2" runat="server" Height="80px" ImageUrl="~/img/apple_logo_rainbow.gif" />
         </div>        
     
     <div id="loginbox">
