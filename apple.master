@@ -11,17 +11,35 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <div id="wrap">
+        <div id="header">
+            <div id="logo"></div>
+            <div id="title"></div>
+            <div id="logo1"></div>
+        </div>        
+    
+    <div id="loginbox">
+        <asp:LoginStatus ID="LoginStatus" runat="server" />
+    </div>
 
     <nav id="nav">
         <asp:Menu ID="navMenu" runat="server" DataSourceID="SiteMap" Orientation="Horizontal" RenderingMode="Table">
 
         </asp:Menu>
         <asp:SiteMapDataSource ID="SiteMap" runat="server" ShowStartingNode="false" />
+        <div id="date">
+        <asp:Label ID="lblDate" runat="server"></asp:Label>
+        </div>
     </nav>
-    <div>
+    
+    <div id="main">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+        <p> Copyright &#169; <asp:Label ID="lblFooter" runat="server" Text="Label"></asp:Label></p>
+    </div>
     </div>
     </form>
 </body>
