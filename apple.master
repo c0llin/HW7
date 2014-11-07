@@ -13,19 +13,22 @@
     <form id="form1" runat="server">
     <div id="wrap">
         <div id="header">
-            <asp:Image ID="AppLogo1" runat="server" Height="80px" ImageUrl="~/img/apple_logo_rainbow.gif" />
             <div id="title"></div>
-            <asp:Image ID="AppLogo2" runat="server" Height="80px" ImageUrl="~/img/apple_logo_rainbow.gif" />
         </div>        
     
-    <div id="loginbox">
-        <asp:LoginStatus ID="LoginStatus" runat="server" />
-    </div>
+    
 
     <nav id="nav">
-        <asp:Menu ID="navMenu" runat="server" DataSourceID="SiteMap" Orientation="Horizontal" RenderingMode="Table">
-
+            <asp:Image ID="AppLogo1" runat="server" Height="80px" ImageUrl="~/img/apple_logo_rainbow.gif" />
+            <asp:Image ID="AppLogo2" runat="server" Height="80px" ImageUrl="~/img/apple_logo_rainbow.gif" />
+        
+        <asp:Menu ID="navMenu" runat="server" DataSourceID="SiteMap" Orientation="Horizontal" RenderingMode="Table" Height="100px" Width="435px">
+            <DynamicMenuStyle BorderStyle="Solid" />
+            
         </asp:Menu>
+        
+            <asp:LoginStatus ID="LoginStatus" runat="server" />
+        
         <asp:SiteMapDataSource ID="SiteMap" runat="server" ShowStartingNode="false" />
         <div id="date">
         <asp:Label ID="lblDate" runat="server"></asp:Label>
@@ -38,7 +41,7 @@
         </asp:ContentPlaceHolder>
     </div>
     <div id="footer">
-        <p> Copyright &#169; <asp:Label ID="lblFooter" runat="server" Text="Label"></asp:Label></p>
+        <p> Copyright MMXIV &#169;&nbsp; MSCI 3300 Software Dev &amp; Design</p>
     </div>
     </div>
     </form>

@@ -6,5 +6,7 @@
         </siteMapNode>
        <siteMapNode url="~/Search.aspx" title="Search"  description="" >
        </siteMapNode>
+    <siteMapNode url="~/about.aspx" title="About Us" description=""></siteMapNode>
+    <siteMapNode url="~/contact.aspx" title="Contact" description=""></siteMapNode>
     </siteMapNode>
 </siteMap>

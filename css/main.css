@@ -4,14 +4,17 @@
     background-color:lavender;
 }
 nav{
-    background-color:orange;
+    background-color:grey;
 }
 #footer{
-    background-color:orange;
+    background-color:grey;
+    padding: 5px;
+    margin: 5px;
 }
 
 #AppLogo2{
     float:right;
+   
 }
 #AppLogo1{
     float:left;
@@ -22,4 +25,18 @@ aboutus_body{
 
 p{
     width:450px;
+}
+#date{
+    float:right;
+}
+#navMenu{
+    background-color: grey;
+        color: black;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 5px;
+        padding:5px;
+}
+#loginbox{
+    float:right;
 }
