@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2>Welcome user to the inventory site</h2>
-    <p> Lorem ipsum dolor sit amet</p>
+    
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="Id" Width="460px">
         <Columns>
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
